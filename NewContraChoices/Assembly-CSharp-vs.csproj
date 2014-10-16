@@ -49,7 +49,9 @@
      <Compile Include="Assets\Scripts\ColliderKiller.cs" />
      <Compile Include="Assets\Scripts\ForceBack.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />
-     <Compile Include="Assets\Scripts\PlayMovie.cs" />
+     <Compile Include="Assets\Scripts\PlayMovie_Copper.cs" />
+     <Compile Include="Assets\Scripts\PlayMovie_Hormonal.cs" />
+     <Compile Include="Assets\Scripts\PlayMovie_Implant.cs" />
      <Compile Include="Assets\Scripts\PushSlideDown.cs" />
      <Compile Include="Assets\Scripts\SmoothPageSlide_2.cs" />
      <Compile Include="Assets\Scripts\SmoothPageSwipe.cs" />
