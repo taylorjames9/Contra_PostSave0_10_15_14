@@ -3,13 +3,10 @@ using System.Collections;
 
 public class PlayMovie_Hormonal : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	int mouseCounter;
+
+	void OnMouseDown(){
+		Handheld.PlayFullScreenMovie ("miPlan_Horm_IUD_BW", Color.black, FullScreenMovieControlMode.CancelOnInput);
+		Debug.Log ("Should be playing movie now");
 	}
 }

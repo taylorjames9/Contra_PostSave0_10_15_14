@@ -3,13 +3,10 @@ using System.Collections;
 
 public class PlayMovie_Copper : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	int mouseCounter;
+
+	void OnMouseDown(){
+		Handheld.PlayFullScreenMovie ("MiPlan_CopperIUD", Color.black, FullScreenMovieControlMode.CancelOnInput);
+		Debug.Log ("Should be playing copper movie now");
 	}
 }
