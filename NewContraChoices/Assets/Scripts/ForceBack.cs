@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ForceBack : MonoBehaviour {
 
-		public GameObject sliderTrack;
+	public GameObject sliderTrack;
 
 	// Use this for initialization
 	void Start () {

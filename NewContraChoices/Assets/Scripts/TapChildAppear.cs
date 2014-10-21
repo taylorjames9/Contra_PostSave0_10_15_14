@@ -17,13 +17,14 @@ public class TapChildAppear : MonoBehaviour {
 	}
 
 	void OnMouseOver(){
-		print ("Collder should be deactivated");
+		//print ("Collder should be deactivated");
 		
 				//this works
 				//this.transform.parent.transform.parent.transform.collider2D.enabled = false;
 	}
 
 	void OnMouseDown(){
+		Debug.Log ("TapChildAppear butn has been hit. We Should be moving to one level down from Choice #? slide");
 		backToOptionsBtn.SetActive (false);
 		myCompatriot.SetActive (true);
 		myCompatriot.transform.position = myCompatriot.transform.parent.transform.parent.position;
@@ -32,9 +33,9 @@ public class TapChildAppear : MonoBehaviour {
 		Component[] blackBtns = this.transform.parent.transform.GetComponentsInChildren<BoxCollider2D> ();
 		//print ("this is the blackbtns ArrayList: " + blackBtns); 
 		foreach (BoxCollider2D blckbtns in blackBtns) {
-						if (blckbtns.name != "BlackBtn_Back") {
+			if (blckbtns.name != "BlackBtn_Back" && blckbtns.name != "BackToAllOptions") {
 								blckbtns.enabled = false;
-								print ("blackbtns " + blckbtns);
+								print ("Other buttons disabled..." + blckbtns);
 						}
 		}
 	}

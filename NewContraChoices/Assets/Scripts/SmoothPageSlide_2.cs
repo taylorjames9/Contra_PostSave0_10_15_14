@@ -222,7 +222,7 @@ public class SmoothPageSlide_2 : MonoBehaviour {
 				slideNum--;
 				Debug.Log ("SlideNum after force back move = " + slideNum);
 				forceBackBool = false;
-				Debug.Log ("force forward completed");
+				Debug.Log ("force back completed");
 				dontMove = false;
 				//}
 		}

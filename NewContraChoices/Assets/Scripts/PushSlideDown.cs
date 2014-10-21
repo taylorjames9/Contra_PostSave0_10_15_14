@@ -34,8 +34,9 @@ public class PushSlideDown : MonoBehaviour {
 			GameObject masterCollider = GameObject.FindWithTag ("MasterCollider");
 			//masterCollider.collider2D.enabled = true;
 			Component[] blackBtns = this.transform.parent.transform.parent.transform.parent.transform.GetComponentsInChildren<BoxCollider2D> ();
-				print ("this is the blackbtns ArrayList: " + blackBtns); 
+				//print ("this is the blackbtns ArrayList: " + blackBtns); 
 			foreach (BoxCollider2D blckbtns in blackBtns) {
+						Debug.Log ("Button re-enable ..."+blckbtns.name);
 				blckbtns.enabled = true;
 				//print ("disabled a child");
 			}
