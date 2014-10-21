@@ -10,21 +10,17 @@ public class PushSlideDown : MonoBehaviour {
 
 	void Awake(){
 			myHidingSpot = new Vector3 (myAuxSlide.transform.position.x, (myAuxSlide.transform.position.y - 11.0f), myAuxSlide.transform.position.z);
-
 	}
 	
 	void Update(){
 			myAuxVex3 = new Vector3 (myAuxSlide.transform.position.x, myAuxSlide.transform.position.y, myAuxSlide.transform.position.z);
 			//myHidingSpot = new Vector3 (myAuxSlide.transform.position.x, (myAuxSlide.transform.position.y - 11.0f), myAuxSlide.transform.position.z);
-
 	}
-
 
 	void OnMouseDown()
 	{
 		Debug.Log ("BLACK BUTTON");
 		StartCoroutine("move");
-
 	}
 
 	IEnumerator move(){
@@ -38,10 +34,7 @@ public class PushSlideDown : MonoBehaviour {
 			foreach (BoxCollider2D blckbtns in blackBtns) {
 						Debug.Log ("Button re-enable ..."+blckbtns.name);
 				blckbtns.enabled = true;
-				//print ("disabled a child");
 			}
-
-
 			yield return null;
 	}
 }

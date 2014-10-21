@@ -11,8 +11,6 @@ public class tapOptionsScript : MonoBehaviour {
 		string compatriotName;
 		//public GameObject myOptionsAll;
 
-
-
 		void Start(){
 			compatriotName = myCompatriot.name;
 		}

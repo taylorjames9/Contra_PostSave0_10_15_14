@@ -6,10 +6,12 @@ public class BackToMyOptions : MonoBehaviour {
 
 	private float myShelf = -15.0f;
 	public GameObject sliderTrack;
+	public GameObject myOtherBackToOptionsBtn;
 
 
 	void OnMouseUp(){
 
+				myOtherBackToOptionsBtn.SetActive (true);
 
 				this.transform.parent.transform.position = new Vector2 (0.0f, myShelf);
 				SmoothPageSlide_2 pageSlideScript = sliderTrack.GetComponent<SmoothPageSlide_2>();
@@ -30,10 +32,6 @@ public class BackToMyOptions : MonoBehaviour {
 						_1ofBtns.enabled = true;
 						Debug.Log (" Re-enabled ... "+_1ofBtns);
 				}
-
-				//this.transform.parent.transform.parent.transform.position.y = myShelf;
-
-				//alternatively, you could 
 	}
 
 }
