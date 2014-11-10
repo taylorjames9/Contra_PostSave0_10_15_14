@@ -38,6 +38,7 @@
 'Assets/Scripts/BackToMyOptions.cs'
 'Assets/Scripts/ColliderKiller.cs'
 'Assets/Scripts/ForceBack.cs'
+'Assets/Scripts/Intro_Disappear.cs'
 'Assets/Scripts/LoadScene.cs'
 'Assets/Scripts/PlayMovie_Copper.cs'
 'Assets/Scripts/PlayMovie_Hormonal.cs'
